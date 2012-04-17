@@ -1,0 +1,56 @@
+HDF5 "/tmp/testData.h5" {
+DATASET "/Fruit" {
+   DATATYPE  H5T_COMPOUND {
+      H5T_STD_I64LE "Id";
+      H5T_STRING {
+         STRSIZE 16;
+         STRPAD H5T_STR_NULLTERM;
+         CSET H5T_CSET_ASCII;
+         CTYPE H5T_C_S1;
+      } "Name";
+   }
+   DATASPACE  SIMPLE { ( 10 ) / ( H5S_UNLIMITED ) }
+   DATA {
+   (0): {
+         0,
+         "Apple"
+      },
+   (1): {
+         1,
+         "Banana"
+      },
+   (2): {
+         2,
+         "Coconut"
+      },
+   (3): {
+         3,
+         "Date"
+      },
+   (4): {
+         4,
+         "Elderberry"
+      },
+   (5): {
+         5,
+         "Fig"
+      },
+   (6): {
+         6,
+         "Grape"
+      },
+   (7): {
+         7,
+         "Honeydew"
+      },
+   (8): {
+         8,
+         "Kumquat"
+      },
+   (9): {
+         9,
+         "Lime"
+      }
+   }
+}
+}

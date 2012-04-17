@@ -1,0 +1,59 @@
+HDF5 "/tmp/testData.h5" {
+DATASET "/AllDatatypes" {
+   DATATYPE  H5T_COMPOUND {
+      H5T_STD_I8LE "AsByte";
+      H5T_STD_U8LE "AsUnsignedByte";
+      H5T_STD_I16LE "AsShort";
+      H5T_STD_U16LE "AsUnsignedShort";
+      H5T_STD_I32LE "AsInt";
+      H5T_STD_U32LE "AsUnsignedInt";
+      H5T_STD_I64LE "AsLong";
+      H5T_IEEE_F32LE "AsFloat";
+      H5T_IEEE_F64LE "AsDouble";
+      H5T_STRING {
+         STRSIZE 10;
+         STRPAD H5T_STR_NULLTERM;
+         CSET H5T_CSET_ASCII;
+         CTYPE H5T_C_S1;
+      } "AsString";
+   }
+   DATASPACE  SIMPLE { ( 3 ) / ( H5S_UNLIMITED ) }
+   (0): {
+         1,
+         11,
+         111,
+         1111,
+         11111,
+         111111,
+         1111111,
+         1.1,
+         11.11,
+         "one"
+      },
+   (1): {
+         2,
+         22,
+         222,
+         2222,
+         22222,
+         222222,
+         2222222,
+         2.2,
+         22.22,
+         "two"
+      },
+   (2): {
+         3,
+         33,
+         333,
+         3333,
+         33333,
+         333333,
+         3333333,
+         3.3,
+         33.33,
+         "three"
+      }
+   }
+}
+}
