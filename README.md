@@ -73,15 +73,12 @@ Click on the function names to see the usage information.
 ##Known Limitations / Areas for Improvement / Seeking Collaborators
 
 1. The dependency on `h5dump` command line tool to extract an ASCII dump of a dataset from HDF5 (.h5) files is a time and disk space consuming step, that could be eliminated by directly reading the binary data from the HDF5 (.h5) file.
-
-   *Seeking a collaborator with experience parsing binary data within Mathematica and who understands the HDF5 (.h5) file format.*
+<p>*Seeking a collaborator with experience parsing binary data within Mathematica and who understands the HDF5 (.h5) file format.*
 
 2. The parsing of the ASCII dump file data needs to be optimized. For a given amount of data, the time to read (and parse) the data is an order of magnitude greater than it is to fast forward (read without parsing) through it.
-
-   *Seeking a collaborator with seasoned Mathematica experience in reading and parsing strings.*
+<p>*Seeking a collaborator with seasoned Mathematica experience in reading and parsing strings.*
 
 3. Handling the enumerated datatype (H5T_ENUM).  I was not able to successfully generate an HDF5 (.h5) file with enumerated data.
-
-   *Seeking a collaborator who can generate a valid HDF5 (.h5) file with a compound dataset that has an enumerated datatype.*
+<p>*Seeking a collaborator who can generate a valid HDF5 (.h5) file with a compound dataset that has an enumerated datatype.*
 
 4. Support for datasets without compound datatypes.
