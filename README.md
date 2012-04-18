@@ -44,8 +44,7 @@ Alternative methods for importing HDF5 (.h5) files into *Mathematica* include:
 2. Create an ASCII dump file for the HDF5 (.h5) file's dataset using the `h5dump` convenience function in the `h5dumpImport` package:
         
         In[4]:=  dumpFile = h5dump["/usr/bin/h5dump", "testData.h5", "/AllDatatypes"];
-   
-   An alternative is to use the 'h5dump' command line tool:
+An alternative is to use the 'h5dump' command line tool:
    
         $ h5dump -d /AllDatatypes testData.h5 > /tmp/h5dump_testData.h5_AllDatatypes.txt
         $
@@ -63,8 +62,7 @@ Alternative methods for importing HDF5 (.h5) files into *Mathematica* include:
 1. `h5dumpImport` package usage information. After loading `h5dumpImport` package in a *Mathematica* Notebook, execute the following expression:
         
         ?h5dumpImport`*
-        
-   Click on the function names to see the usage information.
+Click on the function names to see the usage information.
 
 2. "h5dumpImport Examples.nb" contains a set of examples.
 
