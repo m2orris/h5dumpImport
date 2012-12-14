@@ -1,33 +1,17 @@
-(* Content-type: application/vnd.wolfram.mathematica *)
-
-(*** Wolfram Notebook File ***)
-(* http://www.wolfram.com/nb *)
-
-(* CreatedBy='Mathematica 8.0' *)
-
-(*CacheID: 234*)
-(* Internal cache information:
-NotebookFileLineBreakTest
-NotebookFileLineBreakTest
-NotebookDataPosition[       157,          7]
-NotebookDataLength[     17136,        544]
-NotebookOptionsPosition[     14650,        454]
-NotebookOutlinePosition[     15130,        473]
-CellTagsIndexPosition[     15087,        470]
-WindowFrame->Normal*)
-
-(* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["h5dumpImport Examples", "Title"],
-
-Cell["Version 1.0", "Subtitle"],
-
-Cell["\<\
-Copyright (c) 2012 Michael Morris
-This software is released under MIT Open Source License\
-\>", "Subsubtitle"],
+Cell[TextData[{
+ "h5dumpImport Examples\n",
+ StyleBox["Version 1.0",
+  FontSize->24,
+  FontWeight->"Plain"],
+ "\n",
+ StyleBox["Copyright (c) 2012 Michael Morris\nThis software is released under \
+MIT Open Source License",
+  FontSize->14,
+  FontWeight->"Plain"]
+}], "Title"],
 
 Cell[CellGroupData[{
 
@@ -58,8 +42,9 @@ function in the package."
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"h5dumpLocation", "=", "\"\</usr/bin/h5dump\>\""}], ";"}]], "Input"]
-}, Open  ]],
+  RowBox[{"h5dumpLocation", "=", "\"\</usr/bin/h5dump\>\""}], 
+  ";"}]], "Input"]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -81,7 +66,7 @@ Cell[BoxData[{
  RowBox[{"?", "h5dumpImport`*"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"(*", " ", "*)"}]}]}], "Input"]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -117,8 +102,8 @@ Cell[BoxData[{
       RowBox[{"NotebookDirectory", "[", "]"}], ",", " ", "\"\<testData\>\"", 
       ",", " ", "\"\<h5dump_testData.h5_Fruit.txt\>\""}], "}"}], "]"}]}], 
   ";"}]}], "Input"]
-}, Open  ]]
-}, Open  ]],
+}, Closed]]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -142,7 +127,7 @@ Cell[BoxData[
   RowBox[{"Import", "[", 
    RowBox[{"h5SamplePathAndFilename", ",", " ", "\"\<Datasets\>\""}], 
    "]"}]}]], "Input"]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -195,7 +180,7 @@ Cell[BoxData[
      RowBox[{"datasetNames", "[", 
       RowBox[{"[", "1", "]"}], "]"}], "]"}]}], "\[IndentingNewLine]", 
    "]"}]}]], "Input"]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -223,8 +208,8 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"dumpImport", ".", 
    RowBox[{"h5dumpImportClose", "[", "]"}]}], ";"}]}], "Input"]
-}, Open  ]]
-}, Open  ]],
+}, Closed]]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -277,8 +262,9 @@ Cell[BoxData[{
   RowBox[{"Print", "[", " ", 
    RowBox[{"\"\<Names for each of the data items:\\n\\t\>\"", ",", " ", 
     RowBox[{"dumpImport", ".", 
-     RowBox[{"h5dumpImportDataNames", "[", "]"}]}]}], "]"}], ";"}]}], "Input"]
-}, Open  ]],
+     RowBox[{"h5dumpImportDataNames", "[", "]"}]}]}], "]"}], 
+  ";"}]}], "Input"]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -287,7 +273,7 @@ Cell["Read all of the data in a single function call.", "Subsection"],
 Cell[BoxData[
  RowBox[{"dumpImport", ".", 
   RowBox[{"h5dumpImportData", "[", "All", "]"}]}]], "Input"]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -305,7 +291,7 @@ Cell[BoxData[{
   RowBox[{"h5dumpImportData", "[", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{"dumpImport", ".", 
   RowBox[{"h5dumpImportData", "[", "]"}]}]}], "Input"]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -321,7 +307,7 @@ Cell[BoxData[{
   RowBox[{"h5dumpImportData", "[", "2", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{"dumpImport", ".", 
   RowBox[{"h5dumpImportData", "[", "2", "]"}]}]}], "Input"]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -345,7 +331,7 @@ Cell[BoxData[{
   ";"}], "\[IndentingNewLine]", 
  RowBox[{"dumpImport", ".", 
   RowBox[{"h5dumpImportData", "[", "All", "]"}]}]}], "Input"]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -355,8 +341,8 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"dumpImport", ".", 
    RowBox[{"h5dumpImportClose", "[", "]"}]}], ";"}]], "Input"]
-}, Open  ]]
-}, Open  ]],
+}, Closed]]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -449,105 +435,15 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"dumpImport", ".", 
    RowBox[{"h5dumpImportClose", "[", "]"}]}], ";"}]}], "Input"]
-}, Open  ]]
-}, Open  ]]
+}, Closed]]
+}, Closed]]
 },
 WindowSize->{1016, 1022},
-WindowMargins->{{84, Automatic}, {Automatic, -1072}},
+WindowMargins->{{9, Automatic}, {15, Automatic}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
 ShowSelection->True,
-Magnification:>FEPrivate`If[
-  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.5, 1.5 Inherited],
+TrackCellChangeTimes->False,
 FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 5, \
 2011)",
 StyleDefinitions->"Default.nb"
 ]
-(* End of Notebook Content *)
-
-(* Internal cache information *)
-(*CellTagsOutline
-CellTagsIndex->{}
-*)
-(*CellTagsIndex
-CellTagsIndex->{}
-*)
-(*NotebookFileOutline
-Notebook[{
-Cell[CellGroupData[{
-Cell[579, 22, 38, 0, 114, "Title"],
-Cell[620, 24, 31, 0, 69, "Subtitle"],
-Cell[654, 26, 120, 3, 65, "Subsubtitle"],
-Cell[CellGroupData[{
-Cell[799, 33, 32, 0, 100, "Section"],
-Cell[CellGroupData[{
-Cell[856, 37, 71, 0, 51, "Subsection"],
-Cell[930, 39, 924, 17, 219, "Text"],
-Cell[1857, 58, 102, 2, 40, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1996, 65, 46, 0, 51, "Subsection"],
-Cell[2045, 67, 134, 3, 39, "Text"],
-Cell[2182, 72, 358, 10, 110, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[2577, 87, 51, 0, 51, "Subsection"],
-Cell[2631, 89, 1058, 29, 204, "Input"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[3738, 124, 186, 5, 133, "Section"],
-Cell[3927, 131, 182, 6, 39, "Text"],
-Cell[4112, 139, 163, 4, 40, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[4312, 148, 105, 2, 133, "Section"],
-Cell[4420, 152, 162, 3, 62, "Text"],
-Cell[4585, 157, 1774, 39, 294, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[6396, 201, 51, 0, 100, "Section"],
-Cell[6450, 203, 132, 3, 39, "Text"],
-Cell[CellGroupData[{
-Cell[6607, 210, 84, 1, 51, "Subsection"],
-Cell[6694, 213, 424, 11, 87, "Input"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[7167, 230, 54, 0, 100, "Section"],
-Cell[7224, 232, 132, 3, 39, "Text"],
-Cell[CellGroupData[{
-Cell[7381, 239, 96, 2, 51, "Subsection"],
-Cell[7480, 243, 1394, 36, 248, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[8911, 284, 69, 0, 51, "Subsection"],
-Cell[8983, 286, 103, 2, 40, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[9123, 293, 101, 2, 51, "Subsection"],
-Cell[9227, 297, 409, 9, 110, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[9673, 311, 102, 2, 51, "Subsection"],
-Cell[9778, 315, 322, 7, 87, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[10137, 327, 158, 3, 74, "Subsection"],
-Cell[10298, 332, 144, 3, 39, "Text"],
-Cell[10445, 337, 353, 9, 87, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[10835, 351, 52, 0, 51, "Subsection"],
-Cell[10890, 353, 116, 3, 40, "Input"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[11055, 362, 48, 0, 100, "Section"],
-Cell[11106, 364, 125, 3, 39, "Text"],
-Cell[11234, 369, 3388, 81, 570, "Input"]
-}, Open  ]]
-}, Open  ]]
-}
-]
-*)
-
-(* End of internal cache information *)
